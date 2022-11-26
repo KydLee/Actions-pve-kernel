@@ -49,8 +49,8 @@ jobs:
       continue-on-error: true
       if: steps.update.outputs.status == 'success'
       run: |
-        git config --local user.email "79748239+roforest@users.noreply.github.com"
-        git config --local user.name "roforest"
+        git config --local user.email "kcllee0303@gmail.com"
+        git config --local user.name "KydLee"
         git pull
         git commit -m '${{ steps.update.outputs.version }}' -a
         git push
