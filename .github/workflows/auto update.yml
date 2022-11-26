@@ -19,7 +19,7 @@ jobs:
     - name: Checkout Sources
       uses: actions/checkout@v2
       with:
-        token: $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
+        token: ${{ secrets.REPO_TOKEN }}
       
     - name: Initialization environment
       env:
