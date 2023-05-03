@@ -9,7 +9,7 @@ jobs:
   check:
     name: Check for new release
     runs-on: ubuntu-latest
-    strategy:
+    strategy: 
       max-parallel: 1
       matrix:
         branch: ['master','pve-kernel-5.15','pve-kernel-5.13', 'pve-kernel-5.11']
@@ -17,7 +17,7 @@ jobs:
 
     steps:
     - name: Checkout Sources
-      uses: actions/checkout@v3
+      uses: actions/checkout@v2
       with:
         token: ${{ secrets.REPO_TOKEN }}
       
