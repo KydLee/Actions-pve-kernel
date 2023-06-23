@@ -77,7 +77,7 @@ jobs:
       id: getverion
       run: |
         cd pve-kernel
-        echo "version=$(ls abi-prev* | sed  's/abi-prev/pve-kernel/g' | sed 's/-pve//g')" >> $GITHUB_OUTPU
+        echo "version=$(ls abi-prev* | sed  's/abi-prev/pve-kernel/g' | sed 's/-pve//g')" >> $GITHUB_OUTPUT
       
     - name: Upload kernel directory
       uses: actions/upload-artifact@master
